@@ -19,10 +19,9 @@
 ############################################################################
 
 export SVUNIT_INSTALL=`pwd`
-SVUNIT_INSTALL_BIN=`pwd`/bin
 
 case ":$PATH:" in
 	*":$SVUNIT_INSTALL:"*) :;; 
-	*) PATH="${SVUNIT_INSTALL_BIN}:${PATH}";;
+	*) PATH="${SVUNIT_INSTALL_BIN}/bin:${PATH}";;
 esac
 
